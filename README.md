@@ -8,7 +8,8 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 
 ## Identificação
 
-- Nome completo:
-- RA:
-- Turma: (quarta ou quinta)
-- O que espero aprender:
+- Nome completo: Micael 
+- RA: 925113515
+- Turma: (quinta)
+- O que espero aprender: programar 
+git add README.md
