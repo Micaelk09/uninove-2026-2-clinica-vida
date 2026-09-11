@@ -1,3 +1,27 @@
+/* ==========================================================================
+   ESTILIZAÇÃO DO FORMULÁRIO E GRID RESPONSIVO
+   ========================================================================== */
+
+/* Estilização básica do formulário e fieldsets */
+.form-agendamento {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 8px;
+  color: #333;
+}
+
 /* Passo 4: Estilização e Grid Responsivo */
 .form-grid {                 /* Base Mobile (360px): 1 coluna */
   display: grid;
@@ -11,26 +35,63 @@
   gap: 6px; 
 }
 
+.campo label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Formatação dos inputs, select e textarea */
+.campo input,
+.campo select,
+.campo textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .campo-largo { 
   grid-column: 1 / -1;       /* Ocupa toda a largura da grade */
 }
 
+/* Foco nos campos de entrada */
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus { 
   outline: 3px solid #C84B31; 
 }
 
-/* Tablet (768px): 2 colunas */
+/* Botão de Envio */
+button[type="submit"] {
+  background-color: #C84B31;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #a83d27;
+}
+
+/* Tablet (640px+): 2 colunas */
 @media (min-width: 640px) {
   .form-grid { 
     grid-template-columns: repeat(2, 1fr); 
   }
 }
 
-/* Desktop (1200px): 3 colunas */
+/* Desktop (1024px+): 3 colunas */
 @media (min-width: 1024px) {
   .form-grid { 
     grid-template-columns: repeat(3, 1fr); 
   }
-}   
+}
