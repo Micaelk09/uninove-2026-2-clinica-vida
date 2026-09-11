@@ -11,5 +11,4 @@ aplicação completa entregue na Aula 20. O enunciado completo do case está em
 - Nome completo: Micael 
 - RA: 925113515
 - Turma: (quinta)
-- O que espero aprender: programar 
-git add README.md
+- O que espero aprender: programar
